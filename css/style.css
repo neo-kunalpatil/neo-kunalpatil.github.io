@@ -305,6 +305,28 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2; }
+  .extra-photos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.extra-photos img {
+  width: 280px;                /* Fixed width for consistency */
+  height: 360px;               /* Fixed height for uniformity */
+  object-fit: cover;           /* Keeps the image filled while cropping */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.extra-photos img:hover {
+  transform: scale(1.05);
+}
+
 
 h1, .h1 {
   font-size: 2.5rem; }
@@ -3473,7 +3495,8 @@ input[type="button"].btn-block {
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
-  white-space: nowrap; }
+  white-space: nowrap;
+  font-family: 'Brush Script MT' , 'Brush Script STD', cursive;  }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
 
